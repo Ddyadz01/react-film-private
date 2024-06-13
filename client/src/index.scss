@@ -16,10 +16,12 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  .content {
+    width: calc(100% - 36%);
+  }
   .dashboard,
   .sidebar {
-    width: 15%;
-    height: 100vh;
+    width: 18%;
   }
 
   .dashboard {

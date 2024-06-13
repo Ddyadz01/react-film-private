@@ -11,7 +11,7 @@ export const App = () => {
   return token ? (
     <div className="wrapper">
       <Dashboard />
-      <div className="home">
+      <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
