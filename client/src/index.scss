@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import './styles/_colors';
+
+body {
+  background-color: var(--bg_color);
+  color: var(--white_color);
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.wrapper {
+  max-width: 1872px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  .dashboard,
+  .sidebar {
+    width: 15%;
+    height: 100vh;
+  }
+
+  .dashboard {
+    border-right: 1px solid var(--elements_border);
+  }
+  .sidebar {
+    border-left: 1px solid var(--elements_border);
+  }
+}
