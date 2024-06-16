@@ -1,10 +1,6 @@
-// import { useFilms } from '../../hooks/useGetFilms.hook';
-
 import '../../styles/Home.scss';
 
 export const Home = () => {
-  // const { data } = useFilms();
-
   return (
     <div className="home">
       <div className="home__my_films">
