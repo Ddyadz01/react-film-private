@@ -1,0 +1,68 @@
+.sign_form {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  h1 {
+    margin: 30px 0;
+  }
+  &__content {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    .form {
+      width: 80%;
+      margin: 0 auto;
+    }
+    input {
+      background: none;
+      border: 1px solid var(--white_color);
+      outline: none;
+      color: var(--white_color);
+      margin: 5px 0;
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 15px;
+      &::placeholder {
+        color: var(--white_color);
+      }
+    }
+
+    .info_register {
+      width: 80%;
+      button {
+        color: var(--white_color);
+        background: none;
+        border: 1px solid var(--white_color);
+        border-radius: 9px;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+        margin-top: 30px;
+        &:hover {
+          background-color: var(--white_color);
+          color: #000;
+        }
+      }
+      p {
+        text-align: center;
+        margin-top: 20px;
+        a {
+          color: var(--white_color);
+          border-bottom: 1px solid var(--white_color);
+        }
+      }
+    }
+  }
+}
